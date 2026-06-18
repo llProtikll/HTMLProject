@@ -3,6 +3,15 @@
     src: local('GameFont'), url('VisitorRus.woff') format('woff');
 }
 
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 html, body {
     background-color: black;
     height: 100%;
@@ -175,7 +184,7 @@ footer {
 
 
 .register {
-    height: 600px;
+    height: 700px;
     width: 800px;
     margin: auto auto;
     background-color: black;
@@ -232,7 +241,7 @@ footer {
 
 
 .submitboard {
-    height: 300px;
+    height: 400px;
     width: 600px;
     margin: auto auto;
     background-color: black;
@@ -250,7 +259,7 @@ footer {
 
 
 .top {
-    height: 600px;
+    height: 700px;
     width: 500px;
     margin: auto auto;
     background-color: black;
@@ -263,3 +272,161 @@ footer {
     color: rgb(199, 86, 11);
     font-size: 23px;
 }
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .info {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+    }
+
+    .infotext {
+        width: 45%;
+        height: 70px;
+    }
+
+    .screenshots {
+        flex-wrap: wrap;
+        height: auto;
+        margin: 30px;
+        gap: 20px;
+    }
+
+    .screenshots img {
+        width: 90%;
+        max-width: 600px;
+        height: auto;
+    }
+
+    .description {
+        margin: 20px 10%;
+        font-size: 24px;
+    }
+
+    .main {
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .gamelogo img {
+        width: 180px;
+        height: auto;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .infotext {
+        width: 100%;
+        height: 60px;
+    }
+
+    .infotext a {
+        font-size: 18px;
+    }
+
+    .screenshots {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 10px;
+    }
+
+    .screenshots img {
+        width: 100%;
+        height: auto;
+    }
+
+    .description {
+        font-size: 20px;
+        margin: 20px;
+    }
+
+    .preorder {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .preorderbutton {
+        width: 90%;
+        max-width: 300px;
+        height: 60px;
+    }
+
+    .preorderbutton a {
+        font-size: 20px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .card {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .card a {
+        align-items: center;
+    }
+
+    .register, .submitboard, .top, .submitboard {
+        height: 700px;
+        width: 95%;
+        margin: auto;
+    }
+
+    .register input {
+        width: 100%;
+    }
+
+    .registeroptions {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .description {
+        font-size: 18px;
+    }
+
+    .preorder {
+        font-size: 24px;
+    }
+
+    .infotext a {
+        font-size: 16px;
+    }
+
+    .cubedecorations .cube {
+        width: 18px;
+        height: 18px;
+    }
+}
+
