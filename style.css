@@ -9,7 +9,7 @@ html, body {
     margin: 0;
 }
 
-a {
+h1, a {
     font-family: 'GameFont';
     color: rgb(199, 86, 11);
     text-decoration: none;
@@ -46,7 +46,6 @@ a {
 .infotext img {
     width: 35px;
     height: 35px;
-
     vertical-align: middle;
 }
 
@@ -168,4 +167,99 @@ footer {
     display: flex;
     flex-direction: column;
     margin: 10px 0;
+}
+
+
+
+
+
+
+.register {
+    height: 600px;
+    width: 800px;
+    margin: auto auto;
+    background-color: black;
+    border: 1px solid rgb(199, 86, 11);
+    padding: 30px 50px;
+}
+
+.register h1 {
+    font-size: 55px;
+}
+
+.register a {
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    margin: 15px 0;
+}
+
+.register input {
+    width: 300px;
+    height: 50px;
+    background-color: black;
+    border: 1px solid rgb(199, 86, 11);
+    font-family: 'GameFont';
+    font-size: 20px;
+    color: rgb(199, 86, 11);
+}
+
+.registeroptions {
+    margin: 15px 0;
+}
+
+.registersubmit {
+    width: 200px;
+    height: auto;
+    border: 1px solid rgb(199, 86, 11);
+    background-color: rgb(199, 86, 11);
+}
+
+.registercancel {
+    width: 200px;
+    height: auto;
+    border: 1px solid rgb(199, 86, 11);
+    background-color: black;
+}
+
+.registersubmit a {
+    color: black;
+}
+
+
+
+
+
+
+.submitboard {
+    height: 300px;
+    width: 600px;
+    margin: auto auto;
+    background-color: black;
+    border: 1px solid rgb(199, 86, 11);
+    padding: 15px 30px;
+}
+
+.submitboard a {
+    font-size: 20px;
+}
+
+
+
+
+
+
+.top {
+    height: 600px;
+    width: 500px;
+    margin: auto auto;
+    background-color: black;
+    border: 1px solid rgb(199, 86, 11);
+    padding: 30px 40px;
+}
+
+.top li {
+    font-family: 'GameFont';
+    color: rgb(199, 86, 11);
+    font-size: 23px;
 }
