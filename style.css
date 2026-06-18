@@ -3,8 +3,16 @@
     src: local('GameFont'), url('VisitorRus.woff') format('woff');
 }
 
-body {
+html, body {
     background-color: black;
+    height: 100%;
+    margin: 0;
+}
+
+a {
+    font-family: 'GameFont';
+    color: rgb(199, 86, 11);
+    text-decoration: none;
 }
 
 .wrapper {
@@ -16,7 +24,7 @@ body {
     border: 1px solid rgb(199, 86, 11);
 }
 
-.wrapper img {
+.gamelogo img {
     height: 100px;
     width: 200px;
 }
@@ -43,12 +51,10 @@ body {
 }
 
 .infotext a {
-    font-family: 'GameFont';
     font-size: 22px;
-    color: rgb(199, 86, 11);
 }
 
-.infotext .lang {
+.infotext .altcolor {
     color: rgb(42, 120, 230);
 }
 
@@ -92,12 +98,74 @@ body {
     height: 25px;
 }
 
+.cube:hover {
+    background-color: rgb(42, 120, 230);
+}
+
 .description {
-    display: flex;
-    justify-content: center;
-    font-family: 'GameFont';
     font-size: 30px;
     text-align: center;
+    margin: 30px 25%;
+}
+
+.preorder {
+    font-size: 40px;
+    margin: 0 auto;
+    color: rgb(42, 120, 230);
+}
+
+.preorderbutton {
+    display: flex;
+    height: 70px;
+    width: 200px;
+    margin: 10px auto;
+    background-color: rgb(42, 120, 230);
+    border: 2px solid rgb(42, 120, 230);
+}
+
+.preorderbutton a {
+    font-size: 25px;
+    margin: auto;
+    color: black;
+}
+
+.preorderbutton:hover {
+    background-color: rgb(84, 155, 254);
+    border: 2px solid rgb(84, 155, 254);
+}
+
+.privacypolicy {
+    font-size: 15px;
+    margin: 0 auto;
+    color: white;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: sticky;
+    top: 100vh;
+    margin-top: auto;
+    
+    height: 200px;
+    width: 100%;
+    background-color: rgb(11, 11, 11);
+    border: 1px solid rgb(199, 86, 11);
+    
+}
+
+.card {
+    padding: 15px 40px;
+}
+
+.card h1 {
+    font-family: 'GameFont';
     color: rgb(199, 86, 11);
-    margin: 60px 25%;
+    text-decoration: underline;
+}
+
+.card a {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
 }
